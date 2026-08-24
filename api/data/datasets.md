@@ -81,7 +81,7 @@ A stateful dataset is a dataset that maintains some internal state, which will b
 
 Subclasses can override the `reset()` method to configure this behavior. Further, the return type of a stateful dataset's `get_batch()` method is always an `optional`. When the stateful dataset wants to indicate to the dataloader that its epoch has ended, it should return an empty optional. The dataloader knows to modify its implementation based on whether the dataset is stateless or stateful.
 
-Note that when subclassing from `StatefulDataset<Self, T>`, the return type of `get_batch()`, which the subclass must override, will be `optional<T>` (i.e. the type specified in the `StatefulDataset` specialization is automatically boxed into an `optional` for the dataset's `BatchType`).
+Note that when subclassing a from `StatefulDataset<Self, T>`, the return type of `get_batch()`, which the subclass must override, will be `optional<T>` (i.e. the type specified in the `StatefulDataset` specialization is automatically boxed into an `optional` for the dataset's `BatchType`).
 
 Public Functions
 
