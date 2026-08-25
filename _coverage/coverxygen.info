@@ -3769,7 +3769,8 @@ DA:121,0
 DA:127,0
 DA:133,0
 DA:138,0
-DA:143,0
+DA:146,0
+DA:156,0
 end_of_record
 SF:/__w/pytorch/pytorch/torch/csrc/api/include/torch/mps.h
 DA:21,1
@@ -4205,9 +4206,9 @@ DA:1302,1
 DA:1322,1
 end_of_record
 SF:/__w/pytorch/pytorch/torch/csrc/stable/macros.h
-DA:49,0
-DA:77,0
-DA:128,0
+DA:50,0
+DA:78,0
+DA:129,0
 end_of_record
 SF:/__w/pytorch/pytorch/torch/csrc/api/include/torch/xpu.h
 DA:11,1
