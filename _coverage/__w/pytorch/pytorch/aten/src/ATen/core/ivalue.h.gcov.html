@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2026-09-02 00:55:24</td>
+            <td class="headerValue">2026-09-03 00:56:16</td>
             <td></td>
           </tr>
           <tr>
@@ -579,11 +579,11 @@
 <a name="513"><span class="lineNum">     513 </span>            : </a>
 <a name="514"><span class="lineNum">     514 </span>            :   template &lt;</a>
 <a name="515"><span class="lineNum">     515 </span>            :       typename... Args,</a>
-<a name="516"><span class="lineNum">     516 </span>            :       typename = enable_if_ivalue_compatible&lt;Args...&gt;::type&gt;</a>
+<a name="516"><span class="lineNum">     516 </span>            :       typename = typename enable_if_ivalue_compatible&lt;Args...&gt;::type&gt;</a>
 <a name="517"><span class="lineNum">     517 </span><span class="lineNoCov">          0 :   IValue(const std::tuple&lt;Args...&gt;&amp; t);</span></a>
 <a name="518"><span class="lineNum">     518 </span>            :   template &lt;</a>
 <a name="519"><span class="lineNum">     519 </span>            :       typename... Args,</a>
-<a name="520"><span class="lineNum">     520 </span>            :       typename = enable_if_ivalue_compatible&lt;Args...&gt;::type&gt;</a>
+<a name="520"><span class="lineNum">     520 </span>            :       typename = typename enable_if_ivalue_compatible&lt;Args...&gt;::type&gt;</a>
 <a name="521"><span class="lineNum">     521 </span><span class="lineNoCov">          0 :   IValue(std::tuple&lt;Args...&gt;&amp;&amp; t);</span></a>
 <a name="522"><span class="lineNum">     522 </span><span class="lineNoCov">          0 :   bool isTuple() const {</span></a>
 <a name="523"><span class="lineNum">     523 </span>            :     return Tag::Tuple == tag;</a>
